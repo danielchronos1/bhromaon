@@ -1,0 +1,703 @@
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
+@import url('https://fonts.cdnfonts.com/css/aleo-2');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    
+    &::-webkit-scrollbar{
+        display: none;
+      }
+
+    h1, h2, h3, p {
+        margin: 0;
+    }
+}
+
+.upper {
+    height: 100vh;
+    background: url(../images/header/header-background.png) no-repeat;
+    background-size: cover;
+
+    .upper__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 277px;
+
+        .upper__info__title {
+            margin-bottom: 11px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 4.8px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        .upper__info__description {
+            margin-bottom: 48px;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 6.82px;
+            color: #FFFFFF;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            width: 653px;
+            margin-bottom: 108px;
+
+            .search__data {
+                border: none;
+                padding: 19px 113px;
+                width: 277px;
+                height: 26px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 2.8px;
+                color: #999999;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .search__btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #5474FD;
+                border: 2px solid #FFFFFF;
+                height: 62px;
+                width: 153px;
+                font-family: 'Aleo', sans-serif;                             
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                
+
+                &:hover {
+                    background-color: #3d60fe;   
+                }
+
+                .search__icon {
+                    padding-left: 10px;
+                    width: 22px;
+                    height: 24px;
+                }
+
+                
+            }
+            
+        }
+
+        .scroll__down {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 132px;
+
+            .scroll__link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .scroll__text {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                letter-spacing: 2.8px;
+                color: #FFFFFF;
+            }
+
+            .scroll__icon {
+                width: 17px;
+                height: 11px;
+            }
+        }
+    }
+
+
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 410px;
+    background: #5474FD;
+
+    .nav__logo {
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+
+    .nav__menu__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+
+        .nav__link {
+            color: white;
+            text-decoration: none;
+
+            .nav__menu__item {
+                list-style: none;
+                font-family: 'Aleo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 26px;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+                transition: transform 0.3s ease-in-out;
+                
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+.chooseus__section {
+    background: url(../images/chooseus/background.png) no-repeat;
+    background-size: cover;
+
+    .chooseus__content {
+        display: flex;
+        justify-content: center;
+        gap: 280px;
+
+        .chooseus__info {
+           padding-top: 211px;
+           padding-bottom: 117px;
+
+            .chooseus__info__title {
+                margin-bottom: 50px;
+                font-family: 'Aleo';
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 26px;
+                color: #FFFFFF;
+            }
+
+            .chooseus__info__desc {
+                margin-bottom: 45px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                width: 560px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 1.6px;
+                color: #E8E8E8;
+            }
+
+            .chooseus__btn {
+                padding: 21px 9px 16px 40px;
+                border: none;
+                background: linear-gradient(45deg, #496BFE 0%, #496BFE 43%, #5474FD 43%, #5474FD 100%);
+                font-family: 'Aleo';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                cursor: pointer;
+                transition: transform 250ms;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            
+            }
+        }
+
+        .chooseus__img {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-top: 118px;
+            perspective: 1000px;
+
+            .img__up {
+                margin-left: -100px;
+                transition: transform 250ms;
+
+                &:hover {
+                    transform: translateZ(100px);
+                }
+            }
+
+            
+            .img__down {
+                margin-right: -100px;
+                transition: transform 250ms;
+
+                &:hover {
+                    transform: translateZ(100px);
+                }
+            }
+        }
+    }
+}
+
+.whatwhedo__section {
+    background-color: #333333;
+
+    .whatwhedo__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 158px;
+        padding-top: 80px;
+        padding-bottom: 116px;
+
+        .whatwhedo__shape {
+            position: absolute;
+            margin-top: -100px;
+            z-index: 1;
+        }
+        
+        .whatwhedo__element {
+            display: flex;
+            z-index: 2;
+            align-items: center;
+            flex-direction: column;
+            gap: 18px;
+
+            .icon__back {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 96px;
+                height: 96px;
+                border-radius: 50%;
+                background: #333333;
+            }
+
+            .element__name {
+                font-family: 'Aleo';
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 26px;
+                color: #E8E8E8;
+            }
+        }
+    }
+}
+
+.travel__spain__up {
+    position: relative;
+    background: url(../images/travel/spain-backgroun-up.png) no-repeat;
+    background-size: cover;
+    height: 700px;
+
+    .travel__info__left {
+        position: absolute;
+        margin-top: 217px;
+        margin-left: 328px;
+        width: 543px;
+        height: 374px;
+        background: #232323;
+        opacity: 0.9;
+
+        .travel__info {
+            margin-top: 48px;
+            margin-left: 32px;
+
+            .travel__country {
+                margin-bottom: 23px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                letter-spacing: 1.5px;
+                color: #E8E8E8;
+            }
+    
+            .travel__location {
+                margin-bottom: 13px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+
+            .travel__desc {
+                margin-bottom: 46px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #E8E8E8;
+            }
+
+            .travel__btn {
+                padding: 21px 34px 16px 64px;
+                border: none;
+                background: linear-gradient(45deg, #496BFE 0%, #496BFE 43%, #5474FD 43%, #5474FD 100%);
+                font-family: 'Aleo';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                cursor: pointer;
+                transition: transform 250ms;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+    
+}
+
+.travel__spain__down {
+    position: relative;
+    background: url(../images/travel/spain-background-down.png) no-repeat;
+    background-size: cover;
+    height: 700px;
+
+    .travel__info__right {
+        position: absolute;
+        margin-top: 217px;
+        right: 0;
+        margin-right: 328px;
+        width: 543px;
+        height: 374px;
+        background: #232323;
+        opacity: 0.9;
+
+        .travel__info {
+            margin-top: 48px;
+            margin-left: 32px;
+
+            .travel__country {
+                margin-bottom: 23px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                letter-spacing: 1.5px;
+                color: #E8E8E8;
+            }
+    
+            .travel__location {
+                margin-bottom: 13px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+
+            .travel__desc {
+                margin-bottom: 46px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #E8E8E8;
+            }
+
+            .travel__btn {
+                padding: 21px 34px 16px 64px;
+                border: none;
+                background: linear-gradient(45deg, #496BFE 0%, #496BFE 43%, #5474FD 43%, #5474FD 100%);
+                font-family: 'Aleo';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 1.2px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                cursor: pointer;
+                transition: transform 250ms;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }     
+}
+
+
+.testimonial {
+    background: url(../images/testimonial/background.png) no-repeat;
+    background-size: cover;
+
+    .testimonial__content {
+        padding-bottom: 200px;
+    }
+
+    .testimonial__title {
+        padding-top: 128px;
+        text-align: center;
+        font-family: 'Aleo';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    .testimonial__block {
+        margin-top: 91px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .testimonial__img {
+            height: 284px;
+        }
+
+        .testimonial__info {
+            background: #333333;
+            width: 668px;
+            height: 287px;
+
+            .info__client__name {
+                padding-top: 49px;
+                padding-left: 59px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: uppercase;
+                color: #FEFEFE;
+            }
+
+            .info__client__quote {
+                padding-left: 59px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFF;
+                width: 581px;
+
+                .quote {
+                    color: #5474FD;
+                    font-size: 42px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #232323;
+
+    .company {
+        padding-top: 120px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 3.36px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .company__quote {
+        padding-top: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 1.6px;
+        color: #FFFFFF;
+    }
+
+    .social__media {
+        padding-top: 26px;
+        padding-bottom: 46px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .social__icon {
+            color: #FFF;
+            width: 16px;
+            height: 16px;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #5474FD;
+            }
+        }
+    
+    }
+}
+
+/* Target small smartphones */
+@media screen and (max-width: 575px) {
+        .search {
+            
+            margin-right: 200px;
+            width: 175px !important;
+
+            .search__data {
+                font-size: 12px !important;
+                padding: 0;
+                width: 50px !important;
+            }
+
+            .search__btn {
+                padding: 0;
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                font-size: 12px !important;
+                width: 100px !important;
+
+                .search__icon {
+                    width: 16px !important;
+                    height: 16px !important;
+                }
+            }
+        }
+
+        nav {
+            display: none;
+        }
+
+        .chooseus__content {
+            display: flex;
+            flex-direction: column;
+            
+            .chooseus__info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 0 !important;
+
+                .chooseus__info__desc {
+                    text-align: center;
+                    width: 320px !important;
+                }
+            }
+            
+            .chooseus__img {
+                padding-top:0 !important;
+            }
+        }
+
+        .whatwhedo__content {
+            display: flex;
+            flex-direction: column;
+
+            .whatwhedo__shape {
+                display: none;
+            }
+        }
+
+        .travel__spain__up {
+            .travel__info__left {
+                margin-left: 45px;
+                width: 300px;
+
+                .travel__desc {
+                    text-align: center;
+                    padding-right: 45px !important;
+                }
+
+                .travel__btn {
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .travel__spain__down {
+            .travel__info__right {
+                margin-right: 45px;
+                width: 300px;
+
+                .travel__desc {
+                    text-align: center;
+                    padding-right: 45px !important;
+                }
+
+                .travel__btn {
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .testimonial__block {
+            display: flex;
+            flex-direction: column;
+
+            .testimonial__img{
+                width: 340px !important;
+                margin-bottom: -70px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .testimonial__info {
+                width: 340px !important;
+                height: 400px !important;
+
+                .info__client__name {
+                    padding-left: 0 !important;
+                    text-align: center;
+                }
+
+                .info__client__quote {
+                    text-align: center;
+                    padding-left: 10px !important;
+                    width: 320px !important;
+                }
+            }
+        }
+
+
+        
+  }
