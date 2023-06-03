@@ -122,6 +122,7 @@ body {
             margin-bottom: 132px;
 
             .scroll__link {
+                text-decoration: none;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -149,7 +150,6 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
     padding: 10px;
     z-index: 100;
     display: flex;
@@ -231,7 +231,8 @@ nav {
             }
 
             .chooseus__btn {
-                padding: 21px 9px 16px 40px;
+                width: 228px;
+                height: 63px;
                 border: none;
                 background: linear-gradient(45deg, #496BFE 0%, #496BFE 43%, #5474FD 43%, #5474FD 100%);
                 font-family: 'Aleo';
@@ -239,6 +240,7 @@ nav {
                 font-size: 16px;
                 line-height: 26px;
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 letter-spacing: 1.2px;
                 text-transform: uppercase;
@@ -261,7 +263,7 @@ nav {
             perspective: 1000px;
 
             .img__up {
-                margin-left: -100px;
+                margin-right: 100px;
                 transition: transform 250ms;
 
                 &:hover {
@@ -271,7 +273,7 @@ nav {
 
             
             .img__down {
-                margin-right: -100px;
+                margin-left: 100px;
                 transition: transform 250ms;
 
                 &:hover {
@@ -327,16 +329,28 @@ nav {
     }
 }
 
+.travel__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .travel__spain__up {
-    position: relative;
+    display: flex;
+    justify-content: center;
     background: url(../images/travel/spain-backgroun-up.png) no-repeat;
     background-size: cover;
     height: 700px;
 
+    .wrapper {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 1200px;
+        width: 100%;
+    }
+
     .travel__info__left {
-        position: absolute;
         margin-top: 217px;
-        margin-left: 328px;
         width: 543px;
         height: 374px;
         background: #232323;
@@ -373,7 +387,8 @@ nav {
             }
 
             .travel__btn {
-                padding: 21px 34px 16px 64px;
+                width: 228px;
+                height: 63px;
                 border: none;
                 background: linear-gradient(45deg, #496BFE 0%, #496BFE 43%, #5474FD 43%, #5474FD 100%);
                 font-family: 'Aleo';
@@ -381,6 +396,7 @@ nav {
                 font-size: 16px;
                 line-height: 26px;
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 letter-spacing: 1.2px;
                 text-transform: uppercase;
@@ -398,16 +414,21 @@ nav {
 }
 
 .travel__spain__down {
-    position: relative;
+    display: flex;
+    justify-content: center;
     background: url(../images/travel/spain-background-down.png) no-repeat;
     background-size: cover;
     height: 700px;
 
+    .wrapper2 {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1200px;
+        width: 100%;  
+    }
+
     .travel__info__right {
-        position: absolute;
         margin-top: 217px;
-        right: 0;
-        margin-right: 328px;
         width: 543px;
         height: 374px;
         background: #232323;
@@ -444,7 +465,8 @@ nav {
             }
 
             .travel__btn {
-                padding: 21px 34px 16px 64px;
+                width: 228px;
+                height: 63px;
                 border: none;
                 background: linear-gradient(45deg, #496BFE 0%, #496BFE 43%, #5474FD 43%, #5474FD 100%);
                 font-family: 'Aleo';
@@ -452,6 +474,7 @@ nav {
                 font-size: 16px;
                 line-height: 26px;
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 letter-spacing: 1.2px;
                 text-transform: uppercase;
